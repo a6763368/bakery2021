@@ -8,23 +8,28 @@
 nav {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 15% auto 15%;
-      grid-template-columns: 15% auto 15%;
+  -ms-grid-columns: 20% auto 20%;
+      grid-template-columns: 20% auto 20%;
   text-align: center;
-  background: black;
-  padding: 20px;
-  color: white;
+  background: white;
+  padding: 10px;
+  color: black;
 }
 
 #link a {
-  color: white;
+  color: black;
   text-decoration: none;
   padding: 0 30px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-#link ahover {
+#link a:hover {
   font-size: 36px;
+}
+
+#link #link-logo {
+  width: 350px;
+  height: 350px;
 }
 /*# sourceMappingURL=style.css.map */
