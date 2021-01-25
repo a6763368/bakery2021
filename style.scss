@@ -7,10 +7,10 @@ $color-white: white;
 }
 nav {
     display: grid;
-    grid-template-columns: 15% auto 15%;
+    grid-template-columns: 20% auto 20%;
     text-align: center;
     background: $color-white;
-    padding: 20px;
+    padding: 10px;
     color: $color-black;
 }
 
@@ -25,6 +25,16 @@ nav {
             font-size: 36px;
         }
     }
+      #link-logo {
+          width: 350px;
+          height: 350px;
+      }
+    // #link-logo{
+    //     width: 80px;
+    //     height: 80px;
+    // }
+    
+    
 }
 
 .logo {
