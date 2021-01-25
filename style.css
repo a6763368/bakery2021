@@ -1,0 +1,30 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 微軟正黑體;
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% auto 15%;
+      grid-template-columns: 15% auto 15%;
+  text-align: center;
+  background: black;
+  padding: 20px;
+  color: white;
+}
+
+#link a {
+  color: white;
+  text-decoration: none;
+  padding: 0 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#link ahover {
+  font-size: 36px;
+}
+/*# sourceMappingURL=style.css.map */
