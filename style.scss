@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap");
+$color-text: "Noto Sans TC", sans-serif;
 $color-black: black;
 $color-white: white;
 * {
@@ -12,30 +14,29 @@ nav {
     background: $color-white;
     padding: 10px;
     color: $color-black;
-}
+    #link {
+        a {
+            color: $color-black;
+            text-decoration: none;
+            padding: 0 50px;
 
-#link {
-    a {
-        color: $color-black;
-        text-decoration: none;
-        padding: 0 30px;
-        transition: 0.5s;
-
-        &:hover {
-            font-size: 36px;
+            transition: 0.5s;
+            font-family: $color-text;
+            &:hover {
+                font-size: 36px;
+            }
+        }
+        #link-logo {
+            width: 100px;
         }
     }
-      #link-logo {
-          width: 350px;
-          height: 350px;
-      }
-    // #link-logo{
-    //     width: 80px;
-    //     height: 80px;
-    // }
-    
-    
-}
-
-.logo {
+    #social{
+        img{
+            padding: 30px;
+            transition: 0.5s;
+            &:hover{
+                filter: invert(76%) sepia(68%) saturate(350%) hue-rotate(344deg) brightness(94%) contrast(95%);
+            }
+        }
+    }
 }
