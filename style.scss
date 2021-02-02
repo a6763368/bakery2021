@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap");
 $color-text: "Noto Sans TC", sans-serif;
 // 主色系色碼 #ebbd68
-$color-main:#ebbd68;
+$color-main:#e6c27f;
 $color-black: black;
 $color-white: white;
 * {
@@ -46,7 +46,7 @@ nav {
 
 // 輪播圖區塊
 #banner{
-    border:5px #FFAC55 solid;
+    // border:5px #FFAC55 solid;
     height: 100vh;
     background-color:$color-main;
     // slick旁邊會有白色多於區域，使用overflow解決。

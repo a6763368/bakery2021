@@ -48,9 +48,8 @@ nav #social img:hover {
 }
 
 #banner {
-  border: 5px #FFAC55 solid;
   height: 100vh;
-  background-color: #ebbd68;
+  background-color: #e6c27f;
   overflow: hidden;
 }
 
