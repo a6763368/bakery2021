@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap");
 $color-text: "Noto Sans TC", sans-serif;
+// 主色系色碼 #ebbd68
+$color-main:#ebbd68;
 $color-black: black;
 $color-white: white;
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 微軟正黑體;
 }
 nav {
@@ -38,5 +41,22 @@ nav {
                 filter: invert(76%) sepia(68%) saturate(350%) hue-rotate(344deg) brightness(94%) contrast(95%);
             }
         }
+    }
+}
+
+// 輪播圖區塊
+#banner{
+    border:5px #FFAC55 solid;
+    height: 100vh;
+    background-color:$color-main;
+    // slick旁邊會有白色多於區域，使用overflow解決。
+    overflow: hidden;
+    #banner-box{
+        width: 1200px;
+        margin: 80px auto;
+        img{
+            height: 600px;
+        }
+
     }
 }

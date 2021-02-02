@@ -3,6 +3,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 微軟正黑體;
 }
 
@@ -43,5 +45,21 @@ nav #social img {
 nav #social img:hover {
   -webkit-filter: invert(76%) sepia(68%) saturate(350%) hue-rotate(344deg) brightness(94%) contrast(95%);
           filter: invert(76%) sepia(68%) saturate(350%) hue-rotate(344deg) brightness(94%) contrast(95%);
+}
+
+#banner {
+  border: 5px #FFAC55 solid;
+  height: 100vh;
+  background-color: #ebbd68;
+  overflow: hidden;
+}
+
+#banner #banner-box {
+  width: 1200px;
+  margin: 80px auto;
+}
+
+#banner #banner-box img {
+  height: 600px;
 }
 /*# sourceMappingURL=style.css.map */
