@@ -138,4 +138,34 @@ nav #social img:hover {
   height: 200px;
   margin: 0 auto;
 }
+
+.about-banner {
+  width: 100%;
+  height: 100vh;
+  background-color: #ccc;
+  background: linear-gradient(115deg, #e6c27f 50%, transparent 50%) center center/100% 100%, url(./img/shop.jpg) right center/auto 100%;
+  position: relative;
+}
+
+.container {
+  width: 1200px;
+  max-width: 1440px;
+  height: 100%;
+}
+
+.banner-txt {
+  width: 600px;
+  padding: 30px;
+  position: absolute;
+  top: 250px;
+  left: 30px;
+}
+
+.banner-txt h1 {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.banner-txt p {
+  font-family: "Noto Sans TC", sans-serif;
+}
 /*# sourceMappingURL=style.css.map */
