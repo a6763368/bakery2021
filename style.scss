@@ -47,7 +47,7 @@ nav {
 // 輪播圖區塊
 #banner{
     // border:5px #FFAC55 solid;
-    height: 100vh;
+    height: 800px;
     background-color:$color-main;
     // slick旁邊會有白色多於區域，使用overflow解決。
     overflow: hidden;
@@ -57,6 +57,28 @@ nav {
         img{
             height: 600px;
         }
+       
+    }
+}
 
+// 產品
+#product {
+    width: 1280px;
+    display: grid;
+    grid-template-columns: 426px 426px 426px;
+    margin: 10px auto;
+}
+.data{
+    text-align: center;
+}
+@for $i from 1 through 6 {
+    .img-box#{$i} {
+        background-image: url(./img/bread#{$i}.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        
     }
 }

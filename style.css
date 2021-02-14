@@ -48,7 +48,7 @@ nav #social img:hover {
 }
 
 #banner {
-  height: 100vh;
+  height: 800px;
   background-color: #e6c27f;
   overflow: hidden;
 }
@@ -60,5 +60,72 @@ nav #social img:hover {
 
 #banner #banner-box img {
   height: 600px;
+}
+
+#product {
+  width: 1280px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 426px 426px 426px;
+      grid-template-columns: 426px 426px 426px;
+  margin: 10px auto;
+}
+
+.data {
+  text-align: center;
+}
+
+.img-box1 {
+  background-image: url(./img/bread1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.img-box2 {
+  background-image: url(./img/bread2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.img-box3 {
+  background-image: url(./img/bread3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.img-box4 {
+  background-image: url(./img/bread4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.img-box5 {
+  background-image: url(./img/bread5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.img-box6 {
+  background-image: url(./img/bread6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
