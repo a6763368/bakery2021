@@ -143,7 +143,7 @@ nav #social img:hover {
   width: 100%;
   height: 100vh;
   background-color: #ccc;
-  background: linear-gradient(115deg, #e6c27f 50%, transparent 50%) center center/100% 100%, url(./img/shop.jpg) right center/auto 100%;
+  background: linear-gradient(115deg, #e6c27f 50%, transparent 60%) center center/100% 100%, url(./img/shop.jpg) right center/auto 100%;
   position: relative;
 }
 
