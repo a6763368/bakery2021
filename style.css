@@ -66,13 +66,23 @@ nav #social img:hover {
   width: 1280px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 426px 426px 426px;
-      grid-template-columns: 426px 426px 426px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   margin: 10px auto;
 }
 
 .data {
+  margin: 0 auto;
+  width: 200px;
   text-align: center;
+}
+
+.data h3 {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.data p {
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 .img-box1 {

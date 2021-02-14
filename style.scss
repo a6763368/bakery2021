@@ -65,11 +65,21 @@ nav {
 #product {
     width: 1280px;
     display: grid;
-    grid-template-columns: 426px 426px 426px;
+    grid-template-columns: repeat(3,1fr);
     margin: 10px auto;
+    
 }
 .data{
+    margin: 0 auto;
+    width: 200px;
     text-align: center;
+    h3{
+        font-family: $color-text;
+    }
+    p{
+        
+        font-family: $color-text;
+    }
 }
 @for $i from 1 through 6 {
     .img-box#{$i} {
