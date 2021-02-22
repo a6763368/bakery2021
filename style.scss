@@ -122,3 +122,27 @@ nav {
         font-family: $color-text;
     }
 }
+
+footer {
+    width: 100%;
+    padding: 50px 50px;
+    background-color: $color-black;
+    margin-top: 10px;
+    img{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+    #fter{
+        text-align: center;
+        font-size: 20px;
+        // background-color: $color-main;
+    }
+    a{
+        padding: 0 10px;
+       align-items: center;
+       text-decoration: none;
+       font-family: $color-text;
+       color: white;
+    }
+}

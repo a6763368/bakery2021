@@ -168,4 +168,33 @@ nav #social img:hover {
 .banner-txt p {
   font-family: "Noto Sans TC", sans-serif;
 }
+
+footer {
+  width: 100%;
+  padding: 50px 50px;
+  background-color: black;
+  margin-top: 10px;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer #fter {
+  text-align: center;
+  font-size: 20px;
+}
+
+footer a {
+  padding: 0 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-family: "Noto Sans TC", sans-serif;
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */
