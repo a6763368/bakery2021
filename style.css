@@ -197,4 +197,11 @@ footer a {
   font-family: "Noto Sans TC", sans-serif;
   color: white;
 }
+
+footer p {
+  color: white;
+  font-family: "Noto Sans TC", sans-serif;
+  text-align: center;
+  margin: 10px 0;
+}
 /*# sourceMappingURL=style.css.map */
