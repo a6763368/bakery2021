@@ -20,11 +20,18 @@ nav {
       grid-template-areas: " nav-box link social";
 }
 
+@media screen and (max-width: 767px) {
+  nav {
+    padding: 0;
+  }
+}
+
 nav #nav-box {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: nav-box;
   display: none;
+  position: relative;
 }
 
 @media screen and (max-width: 767px) {
@@ -32,6 +39,31 @@ nav #nav-box {
     text-align-last: left;
     display: block;
   }
+}
+
+nav #nav-box #reel {
+  display: none;
+  width: 150px;
+  height: 100vh;
+  background: #e6c27f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+nav #nav-box #reel img {
+  margin-top: 5px;
+  margin-left: 120px;
+}
+
+nav #nav-box #reel a {
+  display: table;
+  margin: 10px auto;
+  padding: 20px 0;
+  text-decoration: none;
+  color: black;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 nav #link {
