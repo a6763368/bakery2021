@@ -143,6 +143,9 @@ nav {
     width: 1200px;
     max-width: 1440px;
     height: 100%;
+    @media screen and (max-width:$main-phone){
+        width: 100%;
+      }
 }
 .banner-txt {
     width: 600px;

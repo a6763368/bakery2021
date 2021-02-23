@@ -221,6 +221,12 @@ nav #social img:hover {
   height: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}
+
 .banner-txt {
   width: 600px;
   padding: 30px;
