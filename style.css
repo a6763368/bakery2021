@@ -17,6 +17,33 @@ nav {
   background: white;
   padding: 10px;
   color: black;
+      grid-template-areas: " nav-box link social";
+}
+
+nav #nav-box {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: nav-box;
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  nav #nav-box {
+    text-align-last: left;
+    display: block;
+  }
+}
+
+nav #link {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: link;
+}
+
+@media screen and (max-width: 767px) {
+  nav #link {
+    display: none;
+  }
 }
 
 nav #link a {
@@ -34,6 +61,18 @@ nav #link a:hover {
 
 nav #link #link-logo {
   width: 100px;
+}
+
+nav #social {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: social;
+}
+
+@media screen and (max-width: 767px) {
+  nav #social {
+    display: none;
+  }
 }
 
 nav #social img {

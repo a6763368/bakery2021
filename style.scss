@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap");
 $color-text: "Noto Sans TC", sans-serif;
 // 主色系色碼 #ebbd68
-$color-main:#e6c27f;
+$color-main: #e6c27f;
 $color-black: black;
 $color-white: white;
+$main-phone: 767px;
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +18,24 @@ nav {
     background: $color-white;
     padding: 10px;
     color: $color-black;
+    grid-template-areas: " nav-box link social";
+    
+    #nav-box{
+        grid-area: nav-box;
+        display: none;
+        @media screen and (max-width:$main-phone){
+            text-align-last: left;
+            display: block;
+         }
+    }
+
+
     #link {
+        grid-area: link;
+        @media screen and (max-width:$main-phone){
+            
+           display: none;
+        }
         a {
             color: $color-black;
             text-decoration: none;
@@ -33,11 +51,16 @@ nav {
             width: 100px;
         }
     }
-    #social{
-        img{
+    #social {
+        grid-area: social;
+        @media screen and (max-width:$main-phone){
+            
+            display: none;
+         }
+        img {
             padding: 30px;
             transition: 0.5s;
-            &:hover{
+            &:hover {
                 filter: invert(76%) sepia(68%) saturate(350%) hue-rotate(344deg) brightness(94%) contrast(95%);
             }
         }
@@ -45,19 +68,18 @@ nav {
 }
 
 // 輪播圖區塊
-#banner{
+#banner {
     // border:5px #FFAC55 solid;
     height: 800px;
-    background-color:$color-main;
+    background-color: $color-main;
     // slick旁邊會有白色多於區域，使用overflow解決。
     overflow: hidden;
-    #banner-box{
+    #banner-box {
         width: 1200px;
         margin: 80px auto;
-        img{
+        img {
             height: 600px;
         }
-       
     }
 }
 
@@ -65,19 +87,17 @@ nav {
 #product {
     width: 1280px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin: 10px auto;
-    
 }
-.data{
+.data {
     margin: 0 auto;
     width: 200px;
     text-align: center;
-    h3{
+    h3 {
         font-family: $color-text;
     }
-    p{
-        
+    p {
         font-family: $color-text;
     }
 }
@@ -89,36 +109,32 @@ nav {
         width: 200px;
         height: 200px;
         margin: 0 auto;
-        
     }
 }
 
-.about-banner{
+.about-banner {
     width: 100%;
     height: 100vh;
     background-color: #ccc;
-    background: linear-gradient(115deg,$color-main 50%,
-    transparent 60%)center center / 100% 100%,
-    url(./img/shop.jpg)
-    right center / auto 100%;
+    background: linear-gradient(115deg, $color-main 50%, transparent 60%) center center / 100% 100%,
+        url(./img/shop.jpg) right center / auto 100%;
     position: relative;
 }
-.container{
+.container {
     width: 1200px;
     max-width: 1440px;
     height: 100%;
-    
 }
-.banner-txt{
+.banner-txt {
     width: 600px;
     padding: 30px;
     position: absolute;
     top: 250px;
     left: 30px;
-    h1{
+    h1 {
         font-family: $color-text;
     }
-    p{
+    p {
         font-family: $color-text;
     }
 }
@@ -128,24 +144,24 @@ footer {
     padding: 50px 50px;
     background-color: $color-black;
     margin-top: 10px;
-    img{
+    img {
         width: 50px;
         height: 50px;
         object-fit: cover;
     }
-    #fter{
+    #fter {
         text-align: center;
         font-size: 20px;
         // background-color: $color-main;
     }
-    a{
+    a {
         padding: 0 10px;
-       align-items: center;
-       text-decoration: none;
-       font-family: $color-text;
-       color: white;
+        align-items: center;
+        text-decoration: none;
+        font-family: $color-text;
+        color: white;
     }
-    p{
+    p {
         color: $color-white;
         font-family: $color-text;
         text-align: center;
